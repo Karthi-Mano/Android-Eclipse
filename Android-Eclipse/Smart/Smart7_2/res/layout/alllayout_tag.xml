@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_red_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:id="@+id/ib_base_content_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/img_menu"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ib_base_content_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/back"
+                android:visibility="gone"
+                 />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_base_content_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+        
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dip" >
+			<!-- listview和Gridview切换的按钮 -->
+            <ImageButton
+                android:id="@+id/ib_base_content_listorgrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_pic_grid_type"
+                android:visibility="gone"
+                 />
+
+            <ImageButton
+                android:id="@+id/ib_base_content_textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_textsize"
+                android:visibility="gone"
+                
+                 />
+
+            <ImageButton
+                android:id="@+id/ib_base_content_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_share"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

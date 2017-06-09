@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<weather>
+	<city>
+		<name>徐州</name>
+		<temp>5°</temp>
+		<pm>90</pm>
+	</city>
+	<city>
+		<name>南京</name>
+		<temp>8°</temp>
+		<pm>80</pm>
+	</city>
+	<city>
+		<name>上海</name>
+		<temp>12°</temp>
+		<pm>60</pm>
+	</city>
+</weather>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head"/>
+    
+    <ImageView android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/fubuduanlian"/>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="15dp"
+        android:text="    抬起身体时，仰卧起坐臀部不能离地，而卷腹要求下背部不离地，因此卷腹要比仰卧起坐幅度要小，安全可靠，而且对腹部刺激更持续，因为抬起身体超过30°，腹部基本不受力。
+以水平躺在地面的情形作比较区别就很明显：左图为仰卧起坐、右图为卷腹"/>
+    
+    
+    <Button 
+        android:id="@+id/video_teacher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="视频教学"
+        android:textColor="#000000"
+        android:background="@drawable/xu_org_btn"/>
+</LinearLayout>

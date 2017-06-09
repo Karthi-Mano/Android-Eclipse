@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head"/>
+    
+    <ImageView android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/xiazhiduanlian"/>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="15dp"
+        android:text="瑜伽亦不鼓励学习者心急或与他人比较。不少瑜伽动作是需要时间慢慢掌握的，在过程里，身体会不断调节、适应。初学者必须保持耐性，量力而为之余，更应利用一些辅助道具来帮助练习。做瑜伽必备的是一张标准的瑜伽垫，它能在太硬或不平坦的地上发挥应有的缓冲作用，帮助我们保持平衡。不同姿势相应的道具都不同，一些帮助伸展手臂或提腿，一些使背部较容易后弯或向前伸展。"/>
+    
+    
+    <Button 
+        android:id="@+id/video_teacher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="视频教学"
+        android:textColor="#000000"
+        android:background="@drawable/xu_org_btn"/>
+</LinearLayout>

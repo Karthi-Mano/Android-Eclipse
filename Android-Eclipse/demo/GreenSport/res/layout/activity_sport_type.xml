@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/downarmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:background="@drawable/xiazhi_sport" />
+
+            <Button
+                android:id="@+id/armBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:background="@drawable/shangzhi_sport" />
+
+            <Button
+                android:id="@+id/yogaBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:background="@drawable/yujia_sport"/>
+
+            <Button
+                android:id="@+id/abdomenBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:background="@drawable/one_sport" />
+
+            <Button
+                android:id="@+id/chestBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:background="@drawable/xiongbu_sport" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

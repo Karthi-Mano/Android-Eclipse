@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head"/>
+    
+    <ImageView android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/yujiaduanlian"/>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="15dp"
+        android:text="      趴在地上，四肢腾空，腹部使劲；腿间夹一个瑜伽球，四肢用力向外延伸；吸气时，加紧瑜伽球，抬起双手双腿和胸部，使之腾空，坚持10秒，慢慢呼气恢复放松；一次呼吸为一组，在一分钟里尽可能的多做几组，但是要尽可能的保持动作的匀速缓慢的进行。"/>
+    
+    
+    <Button 
+        android:id="@+id/video_teacher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="视频教学"
+        android:textColor="#000000"
+        android:background="@drawable/xu_org_btn"/>
+</LinearLayout>

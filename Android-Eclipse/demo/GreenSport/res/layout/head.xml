@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#3fb4f8"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/tv_back_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+         android:layout_centerVertical="true"
+         android:gravity="center_vertical"
+        android:orientation="vertical">
+        
+            <ImageView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="10dp"
+        android:src="@drawable/tv_back" />
+    </LinearLayout>
+    
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/send_location_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/tv_act"
+            android:layout_width="22dip"
+            android:layout_marginRight="7dp"
+            android:layout_height="22dip" />
+
+        <TextView
+            android:id="@+id/yuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</RelativeLayout>

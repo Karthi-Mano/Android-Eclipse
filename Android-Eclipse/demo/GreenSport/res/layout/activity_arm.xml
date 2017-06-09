@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head"/>
+    
+    <ImageView android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shangzhiduanlian"/>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="15dp"
+        android:text="这是许多运动员力量训练时的首要选择。正如深蹲勇士弗雷德里克·菲尔德所说，“这个动作应该适台从家庭主妇到举重运动员的所有人。”
+　　深蹲主要锻炼臀部肌肉、股四头肌、腘绳肌、竖脊肌、腰部的肌肉，能够增加脊椎和腿部的骨质密度，增加全身的力里，提高身体协调性。
+　　最基本的深蹲动作是站姿杠铃深蹲，但它有非常多的变化，如相扑深蹲、单腿深蹲、杠铃颈前蹲、箭步蹲、自由深蹲、举重深蹲、哑铃深蹲、史密斯器深蹲、深蹲器深蹲、骇客深蹲、跳跃式深蹲、健身球深蹲等。"/>
+    
+    
+    <Button 
+        android:id="@+id/video_teacher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="视频教学"
+        android:textColor="#000000"
+        android:background="@drawable/xu_org_btn"/>
+</LinearLayout>

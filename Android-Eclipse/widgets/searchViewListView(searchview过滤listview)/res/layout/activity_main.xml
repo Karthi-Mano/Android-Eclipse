@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <!--
+    最低版本 api11 
+    android:iconifiedByDefault:设置SearchView的默认状态。如果为true，在没有被使用和点击展开时它将被图形化。
+	android:maxWidth:SearchView的可选择的最大宽度
+	android:queryHint:当查询条件为空时显示的一个提示字符串
+    -->
+
+    <SearchView
+        android:id="@+id/inkey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="true"
+        android:queryHint="search" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inkey" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen" >
+
+    <Button
+        android:id="@+id/gogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="142dp"
+        android:background="@drawable/xu_org_btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Let&apos;s Go!"
+        android:textColor="#f7a441" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="准备好快乐健身了吗？"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

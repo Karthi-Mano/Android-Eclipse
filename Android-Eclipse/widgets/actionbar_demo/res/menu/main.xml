@@ -1,0 +1,67 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="search"
+        android:icon="@drawable/ic_action_search"
+        itheima:actionViewClass="android.support.v7.widget.SearchView"
+        itheima:showAsAction="always"/>
+   <!--  <item
+        android:id="@+id/action_2"
+        android:orderInCategory="100"
+        android:title="2222"
+        itheima:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_3"
+        android:orderInCategory="100"
+        android:title="3333"
+        itheima:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_4"
+        android:orderInCategory="100"
+        android:title="4444"
+        itheima:showAsAction="ifRoom"/>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_5"
+            android:orderInCategory="100"
+            android:title="4444-1"
+            itheima:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_6"
+            android:orderInCategory="100"
+            android:title="4444-2"
+            itheima:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_7"
+            android:orderInCategory="100"
+            android:title="4444-3"
+            itheima:showAsAction="ifRoom"/>
+    </group> -->
+    <!--
+    <item
+        android:id="@+id/action_5"
+        android:orderInCategory="100"
+        android:title="5555"
+        itheima:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:title="5555-1"
+                itheima:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-2"
+                itheima:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-3"
+                itheima:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-4"
+                itheima:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+    -->
+
+</menu>

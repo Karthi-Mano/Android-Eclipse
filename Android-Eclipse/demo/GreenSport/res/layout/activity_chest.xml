@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head"/>
+    
+    <ImageView android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/xiongbuduanlian"/>
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="15dp"
+        android:text="      手脚同高俯卧撑：目标肌肉：胸大肌、肱三头肌、三角肌前束。协同肌肉：喙肱肌、前锯肌、胸小肌。起始姿势：双臂分开，与肩同宽或者比肩略宽，两臂俯撑，脚尖着地，头稍微抬起，眼看地面。收腹，背部保持自然弧度，肘关节微屈。"/>
+    
+    
+    <Button 
+        android:id="@+id/video_teacher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="视频教学"
+        android:textColor="#000000"
+        android:background="@drawable/xu_org_btn"/>
+</LinearLayout>

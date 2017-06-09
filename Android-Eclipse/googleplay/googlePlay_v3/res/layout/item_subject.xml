@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/selector_item_appinfo_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- 已知宽度,能够动态计算高度 -->
+        <com.itheima.googleplay_13.view.RatioLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" >
+
+            <ImageView
+                android:id="@+id/item_subject_iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.itheima.googleplay_13.view.RatioLayout>
+
+        <TextView
+            android:id="@+id/item_subject_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title" />
+    </LinearLayout>
+
+</FrameLayout>
