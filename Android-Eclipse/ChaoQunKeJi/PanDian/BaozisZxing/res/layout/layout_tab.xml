@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#47a0da" >
+
+        <TextView
+            style="@style/tab_top_stype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/zcpdgl" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/ll_rbtn_contain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#E0E0E0"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_job"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_work_background"
+            android:text="@string/pdrw"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_select"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zccx"
+            android:drawableTop="@drawable/tab_select_background"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_user_background"
+            android:text="@string/wdcz"
+            android:textColor="@color/radio_colors" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_rbtn_contain"
+        android:layout_below="@+id/linearLayout1" />
+
+</RelativeLayout>

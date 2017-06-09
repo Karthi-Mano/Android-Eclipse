@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" >
+
+    
+    <RelativeLayout
+        android:id="@+id/rl_pd_bg"
+        android:background="#0187CE"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/pb_pd_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="20dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            
+            android:id="@+id/tv_pd_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_pd_commit"
+            android:layout_centerHorizontal="true"
+            android:text="正在上传,请稍后..."
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    
+    
+    <ListView
+        android:id="@+id/lv_pf_pandian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>

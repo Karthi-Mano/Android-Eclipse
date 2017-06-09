@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="38dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/tv_title_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_title" />
+
+        <!-- 用户 -->
+
+        <TextView
+            android:id="@+id/tv_user_login"
+            style="@style/write_all_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/tv_name" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/et_user"
+                style="@style/et_all_type"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:layout_alignBottom="@id/et_user"
+                android:layout_alignTop="@id/et_user"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/yonghu" />
+        </RelativeLayout>
+        <!-- 密码 -->
+
+        <TextView
+            android:id="@+id/tv_pwd_login"
+            style="@style/write_all_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_pwd" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/et_pwd"
+                style="@style/et_all_type"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/et_pwd"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/et_pwd"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dengpao" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/write_all_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkBox1"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:text="@string/tv_check" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="13dp"
+            android:background="#fa912b"
+            android:text="@string/tv_liogin"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_path_login"
+                style="@style/write_all_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="setService"
+                android:paddingRight="12dp"
+                android:text="@string/tv_configuration" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/findpwd"
+                style="@style/write_all_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="setFindPwd"
+                android:paddingLeft="12dp"
+                android:text="@string/tv_removePwd" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

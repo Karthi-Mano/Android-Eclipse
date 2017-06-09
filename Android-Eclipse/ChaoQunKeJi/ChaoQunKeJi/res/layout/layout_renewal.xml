@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0187CE" >
+
+        <TextView
+            android:id="@+id/tv_uname"
+            style="@style/top_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             android:text="检查更新"
+         />
+
+        <ImageView
+            android:id="@+id/img_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onBack"
+            android:paddingLeft="10dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_table_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/dqbb"
+          
+            
+             />
+
+        <TextView
+            android:id="@+id/tv_dangqianbanben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_table_count"
+            android:layout_alignBottom="@+id/tv_table_count"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_table_count"
+            android:text="v2.2" />
+
+        <TextView
+            android:id="@+id/tv_showBanben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_table_count"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:text="未发现新版本" />
+
+      
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        
+        android:background="#D9FFFF" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            style="@style/word"
+            android:background="@drawable/btnshapr"
+            android:text="开始更新" />
+
+    </RelativeLayout>
+
+</LinearLayout>

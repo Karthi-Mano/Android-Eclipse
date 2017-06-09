@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A90E2"
+    android:gravity="right" >
+
+    <RadioButton
+        android:id="@+id/rb_user"
+        style="@style/tab_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:drawableTop="@drawable/tab_user_background"
+        android:textColor="@color/radio_colors" />
+
+    <RadioGroup
+        android:id="@+id/ll_rbtn_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:gravity="center" >
+
+        <RadioButton
+            android:id="@+id/rb_ruku"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_ruku_background"
+            android:text="@string/rk"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_chuku"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#4A90E2"
+            android:drawableTop="@drawable/tab_chuku_background"
+            android:paddingTop="20dp"
+            android:text="@string/ck"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_jieyong"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#4A90E2"
+            android:drawableTop="@drawable/tab_jieyong_background"
+            android:paddingTop="20dp"
+            android:text="@string/jy"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_guihuan"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#4A90E2"
+            android:drawableTop="@drawable/tab_guihuan_background"
+            android:paddingTop="20dp"
+            android:text="@string/gh"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_pandian"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#4A90E2"
+            android:drawableTop="@drawable/tab_pandian_background"
+            android:paddingTop="20dp"
+            android:text="@string/pd"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_chaxun"
+            style="@style/tab_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#4A90E2"
+            android:drawableTop="@drawable/tab_chaxun_background"
+            android:paddingTop="20dp"
+            android:text="@string/cx"
+            android:textColor="@color/radio_colors" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="90dp" >
+    </FrameLayout>
+
+    <RadioButton
+        android:id="@+id/rb_zhuxiao"
+        style="@style/tab_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_rbtn_contain"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="#4A90E2"
+        android:drawableTop="@drawable/tab_zhuxiao_background"
+        android:text="@string/zhuxiao"
+        android:textColor="@color/radio_colors" />
+
+</RelativeLayout>

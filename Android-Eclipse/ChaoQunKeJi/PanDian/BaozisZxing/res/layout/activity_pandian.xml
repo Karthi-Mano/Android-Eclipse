@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#47a0da" >
+
+        <TextView
+            android:id="@+id/tv_uname"
+            style="@style/tab_top_stype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="盘点" />
+
+        <ImageView
+            android:id="@+id/iv_pandian_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onBack"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="编码" />
+
+            <EditText
+                android:id="@+id/et_ccode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableBottom="@drawable/line"
+                android:ems="10"
+                android:paddingLeft="10dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_erweima"
+                style="@style/saomiao"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:text="扫码" />
+
+            <Button
+                android:id="@+id/open_camera"
+                style="@style/paizhao"
+                android:layout_width="52dp"
+                android:layout_height="35dp"
+                android:text="拍照" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="状态" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/radio_button_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/radiobutton_background" />
+
+                <TextView
+                    style="@style/blue_word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zaiyong" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/radio_button_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/radiobutton_background" />
+
+                <TextView
+                    style="@style/blue_word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xianzhi" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_sure"
+                style="@style/queding"
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:text="确定" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/line" />
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tv_zcname"
+                    style="@style/word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zcname" />
+
+                <TextView
+                    android:id="@+id/tv_zctype"
+                    style="@style/word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_zcname"
+                    android:layout_below="@+id/tv_zcname"
+                    android:text="@string/zctype" />
+
+                <TextView
+                    android:id="@+id/tv_zcidepartment"
+                    style="@style/word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_zctype"
+                    android:layout_below="@+id/tv_zctype"
+                    android:text="@string/zcidepartment" />
+
+                <TextView
+                    android:id="@+id/tv_iclass_name"
+                    style="@style/blue_word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_zctype"
+                    android:layout_alignBottom="@+id/tv_zctype"
+                    android:layout_alignLeft="@+id/tv_cname"
+                    />
+
+                <TextView
+                    android:id="@+id/idepartment_name"
+                    style="@style/blue_word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_zcidepartment"
+                    android:layout_alignBottom="@+id/tv_zcidepartment"
+                    android:layout_alignLeft="@+id/tv_iclass_name"
+                    />
+
+                <TextView
+                    android:id="@+id/dbegin"
+                    style="@style/blue_word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/TextView01"
+                    android:layout_alignBottom="@+id/TextView01"
+                    android:layout_alignLeft="@+id/idepartment_name"
+                    />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    style="@style/word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_zcidepartment"
+                    android:layout_toLeftOf="@+id/dbegin"
+                    android:text="@string/zcddate" />
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_cname"
+                    android:layout_marginRight="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cname"
+                    style="@style/blue_word_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tv_zcname"
+                   />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pandian_title1"
+            style="@style/pandian3"
+            android:layout_height="wrap_content"
+            android:text="待盘数" />
+
+        <TextView
+            android:id="@+id/tv_pandian_title2"
+            style="@style/pandian3"
+            android:layout_height="wrap_content"
+            android:text="已盘数" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pandian_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

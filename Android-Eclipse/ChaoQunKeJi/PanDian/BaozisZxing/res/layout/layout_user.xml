@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#E0E0E0" >
+
+        <TextView
+            android:id="@+id/tv_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/img_jizhuwo"
+            android:text="哈哈"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_jizhuwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/yonghuicon" />
+
+        <TextView
+            android:id="@+id/tv_table_count"
+            style="@style/word_huise_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_uname"
+            android:layout_below="@+id/tv_uname"
+            android:layout_marginBottom="2dp"
+            android:text="登陆账号:" />
+
+        <TextView
+            android:id="@+id/tv_uid"
+            style="@style/word_huise_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_table_count"
+            android:layout_alignBottom="@+id/tv_table_count"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_table_count"
+            android:text="123123" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ib_updatepwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#E0E0E0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/word_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:text="修改密码" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ib_renewal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#E0E0E0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/word_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            
+            android:text="检查更新" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.example.test" >
+    </instrumentation>
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.example.application.CqApplication"
+        android:allowBackup="true"
+        android:allowTaskReparenting="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <uses-library android:name="android.test.runner" />
+
+        
+        <activity
+            android:name="com.example.activity.MainActivity"
+            android:label="@string/app_name"
+              android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+            
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name="com.example.activity.SetserviceActivity"
+              android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.FindPwdActivity"
+              android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.UpdateActivity"
+              android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.TabActivityty"
+              android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.RenewalActivity"
+              android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.ChongzhiPwdActivity"
+              android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.PanDianActivity"
+              android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <provider
+            android:name="com.example.provider.PanDianPrivoder"
+              android:windowSoftInputMode="stateHidden"
+            android:authorities="com.example.provider.PanDianPrivoder" >
+        </provider>
+        <provider
+            android:name="com.example.provider.BiaoDanPrivoder"
+              android:windowSoftInputMode="stateHidden"
+            android:authorities="com.example.provider.BiaoDanPrivoder" >
+        </provider>
+    </application>
+
+</manifest>

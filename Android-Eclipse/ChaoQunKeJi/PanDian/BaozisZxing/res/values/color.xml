@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blueblueblue">#0187CE</color>
+    <color name="witewitewite">#FFF</color>
+    <color name="orange">#FF8F59</color>
+    <color name="blue">#4A90E2</color>
+    <color name="black">#ff000000</color>
+     <color name="result_view">#b0000000</color>
+      <color name="viewfinder_mask">#60000000</color>
+      <color name="possible_result_points">#c0ffff00</color> 
+
+</resources>

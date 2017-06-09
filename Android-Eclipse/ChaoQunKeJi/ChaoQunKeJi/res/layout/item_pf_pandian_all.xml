@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical" >
+    
+   
+    <TextView 
+        android:id="@+id/tv_item_all_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="101-1-1 / 铜山一部 / 华大商贸 / 201105001"
+        />
+    <TextView 
+        android:id="@+id/tv_item_all_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#77000000"
+        android:text="房产证     SN：01338921311"
+        />
+
+</LinearLayout>

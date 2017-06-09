@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <FrameLayout
+        android:id="@+id/fl_fl_fl_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_item_pf_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/pandian_bili_normal" />
+
+        <TextView
+            android:id="@+id/tv_item_pf_bili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="20%"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fl_fl_fl_fl"
+        android:gravity="center_vertical"
+        android:minHeight="70dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_pf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015年末盘点"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp" >
+
+            <TextView
+                style="@style/pandain1"
+                android:text="目标："
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_item_pf_mubiao"
+                style="@style/pandain2"
+                android:text="200"
+                android:textColor="#770000fF"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/pandain1"
+                android:text="已盘：" />
+
+            <TextView
+                android:id="@+id/tv_item_pf_yipan"
+                style="@style/pandain2"
+                android:text="40"
+                android:textColor="#AA00FF00" />
+
+            <TextView
+                style="@style/pandain1"
+                android:text="未盘：" />
+
+            <TextView
+                android:id="@+id/tv_item_pf_weipan"
+                style="@style/pandain2"
+                android:text="160"
+                android:textColor="#AAFF0000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pd_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_seletor"
+        android:paddingBottom="12dp"
+        android:paddingLeft="38dp"
+        android:paddingRight="38dp"
+        android:paddingTop="12dp"
+        android:layout_marginRight="8dp"
+        android:text="提交"
+        android:enabled="false"
+        android:textSize="18sp"
+        android:textColor="#fff" />
+
+</RelativeLayout>

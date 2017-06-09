@@ -1,0 +1,150 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- tab头部样式 -->
+    <style name="tab_top_stype">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="word_huise_small">
+        <item name="android:textColor">#5B5B5B</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- 底部导航栏样式 -->
+    <style name="tab_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <!-- radioButton的样式 -->
+    <style name="radio_button_type">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">#0080FF</item>
+    </style>
+    <!-- 项目黑色字体样式 -->
+    <style name="word_all">
+        <item name="android:textSize">14sp</item>
+          <item name="android:padding">5dp</item>
+    </style>
+    <!-- 输入框的样式 -->
+    <style name="et_all_type">
+        <item name="android:background">@drawable/edtshape</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:hint">@null</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- 蓝色字体的样式 -->
+    <style name="blue_word_all">
+        <item name="android:textColor">#0080FF</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 登录页面标题的样式 -->
+    <style name="tv_title_type">
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+    <!-- 白色字体 -->
+    <style name="write_all_type">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="btntitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 盘点右方字体样式 -->
+    <style name="pandain1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#77000000</item>
+    </style>
+
+    <style name="pandain2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingRight">6dp</item>
+    </style>
+
+    <style name="pandian3">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pandian_title_selector</item>
+        <item name="android:textColor">@color/pandian_title_text_color</item>
+    </style>
+
+    <style name="word">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="saomiao">
+        <item name="android:background">#FF9933</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="paizhao">
+        <item name="android:background">#01B468</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="queding">
+        <item name="android:background">#47a0da</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="huise_type">
+        <item name="android:textColor">#6C6C6C</item>
+        <item name="android:textSize">14dp</item>
+        
+    </style>
+
+</resources>

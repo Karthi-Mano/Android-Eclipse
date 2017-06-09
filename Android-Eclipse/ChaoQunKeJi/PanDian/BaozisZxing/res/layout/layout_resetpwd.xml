@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#47a0da" >
+
+        <TextView
+            android:id="@+id/tv_un"
+            style="@style/tab_top_stype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/czmm" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:clickable="true"
+             android:onClick="onBack"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/btntitle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/et_twopwd"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:text="@string/queding" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_upwd"
+            style="@style/word_all"
+            android:text="@string/newpwdtwo" />
+
+        <EditText
+            android:id="@+id/et_upwd"
+            style="@style/et_all_type"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/tv_uname" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/word_all"
+            android:text="@string/newpwd" />
+
+        <EditText
+            android:id="@+id/et_twopwd"
+            style="@style/et_all_type"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/TextView01" />
+    </RelativeLayout>
+
+</LinearLayout>

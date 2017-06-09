@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0187CE" >
+
+        <TextView
+            android:id="@+id/tv_table_count"
+            style="@style/top_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/czmm" />
+
+        <ImageView
+            android:id="@+id/img_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onBack"
+              android:paddingLeft="10dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/btntitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_twopwd"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape"
+            android:text="@string/queding" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/et_upwd"
+            android:layout_marginTop="20dp"
+            android:text="@string/newpwdtwo" />
+
+        <EditText
+            android:id="@+id/et_upwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_uname"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edtshape"
+            android:ems="10"
+            android:hint="@null"
+            android:inputType="text"
+            android:maxLines="2"
+            android:paddingLeft="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/newpwd" />
+
+        <EditText
+            android:id="@+id/et_twopwd"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edtshape"
+            android:ems="10"
+            android:hint="@null"
+            android:inputType="text"
+            android:maxLines="2"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

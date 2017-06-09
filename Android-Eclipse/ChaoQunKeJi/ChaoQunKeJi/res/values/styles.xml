@@ -1,0 +1,136 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 超群业务应用平台样式 -->
+    <style name="titleWord">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <!-- 服务配置按钮字体样式 -->
+    <style name="btntitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">273dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+    <!-- 字体样式 -->
+    <style name="word">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- 超群科技的样式 -->
+    <style name="CQKJ">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <!-- 首页灰色字体的样式 -->
+    <style name="setWord">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8E8E8E</item>
+    </style>
+    <!-- 连接成功样式 -->
+    <style name="success">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#77FFCC</item>
+    </style>
+    <!-- 顶端字体样式 -->
+    <style name="top_word">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 底部导航栏样式 -->
+    <style name="tab_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">#4A90E2</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        
+    </style>
+
+    <!-- 灰色小字体样式 -->
+    <style name="s_word">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#d0d0d0</item>
+    </style>
+    <!-- 连接成功 -->
+    <style name="show_success">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#73BF00</item>
+        <item name="android:text">连接成功</item>
+    </style>
+    <!-- 连接失败 -->
+    <style name="show_error">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#F75000</item>
+        <item name="android:text">连接失败</item>
+    </style>
+    <!-- 字体样式 -->
+    <style name="tabword">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <!-- 基础字体的样式 -->
+    <style name="allword">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 盘点右方字体样式 -->
+    <style name="pandain1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#77000000</item>
+    </style>
+
+    <style name="pandain2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingRight">6dp</item>
+    </style>
+
+    <style name="pandian3">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pandian_title_selector</item>
+        <item name="android:textColor">@color/pandian_title_text_color</item>
+    </style>
+
+    <style name="tv_style">
+        <item name="android:textColor">#888888</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="tv">
+        <item name="android:textColor">#888888</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

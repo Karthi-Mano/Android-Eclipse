@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/tv_kaishisaomiao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/btnshapr"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_kaishi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/kaishi" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_kaishi"
+                android:text="@string/kaishisaomiao"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_tingshisaomiao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btnorgleshapr"
+            android:gravity="center"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_kaishi2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/zanting" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_kaishi2"
+                android:text="@string/tingzhisaomiao"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+     <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btnorgleshapr"
+        android:padding="12dp"
+        android:paddingRight="10dp"
+        android:text="清除"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
+   <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        android:layout_weight="0.63" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:listSelector="@drawable/list_selector"
+            android:visibility="invisible" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:id="@+id/tv_num1"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="66dp"
+                    android:layout_marginTop="47dp"
+                    android:text="@string/num1" />
+
+                <TextView
+                    android:id="@+id/tv_num2"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_num1"
+                    android:layout_below="@+id/tv_num1"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/num2" />
+
+                <TextView
+                    android:id="@+id/tv_show2"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_num2"
+                    android:layout_alignBottom="@+id/tv_num2"
+                    android:layout_alignLeft="@+id/tv_show1"
+                    android:text="@string/show2" />
+
+               
+
+                <TextView
+                    android:id="@+id/tv_show1"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_num2"
+                    android:layout_toRightOf="@+id/tv_num1"
+                    android:text="@string/jieyong2" />
+
+                <TextView
+                    android:id="@+id/tv_num3"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_num2"
+                    android:layout_below="@+id/tv_num2"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/num3" />
+                <TextView
+                    android:id="@+id/tv_show3"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_num3"
+                    android:layout_alignBottom="@+id/tv_num3"
+                    android:layout_alignLeft="@+id/tv_show2"
+                    android:text="@string/jieyong3" />
+                  <TextView
+                    android:id="@+id/tv_num4"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/tv_num3"
+                    android:layout_below="@+id/tv_num3"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/num4" />
+
+                <TextView
+                    android:id="@+id/show4"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_num4"
+                    android:layout_alignBottom="@+id/tv_num4"
+                    android:layout_alignLeft="@+id/tv_show3"
+                    android:text="@string/jieyong" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp" >
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_sure"
+            android:background="@drawable/edtshape"
+            android:ems="10"
+            android:hint="请输入备注信息"
+            android:paddingLeft="15dp" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/CQKJ"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btnshapr"
+            android:text="生成押品权证借用单" />
+    </RelativeLayout>
+
+</LinearLayout>
